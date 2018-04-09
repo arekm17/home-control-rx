@@ -8,9 +8,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class InfoView: UIView {
     
+    let disposeBag = DisposeBag()
     let infoViewModel: InfoViewModel
     
     let serialNoLabel = UILabel(text: "Serial number:")
@@ -118,11 +121,22 @@ class InfoView: UIView {
     }
     
     func setupBindings() {
-        infoViewModel.onInfoLoaded = { [weak self] info in
-            self?.serialNo.text = info.serialNumber
-            self?.macAddr.text = info.mac
-            self?.softVer.text = info.softVersion
-        }
+        
+        infoViewModel.serialNumber
+            .asObservable()
+            .bind(to: self.serialNo.rx.text)
+            .disposed(by: disposeBag)
+        
+        infoViewModel.macAddr
+            .asObservable()
+            .bind(to: self.macAddr.rx.text)
+            .disposed(by: disposeBag)
+        
+        infoViewModel.softVer
+            .asObservable()
+            .bind(to: self.softVer.rx.text)
+            .disposed(by: disposeBag)
+        
     }
     
 }

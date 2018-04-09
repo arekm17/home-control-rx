@@ -7,12 +7,17 @@
 //
 
 import Foundation
-
+import RxSwift
+import RxCocoa
 
 class InfoViewModel {
     
     let getSettingsInfoUseCase: GetSettingsInfoUseCase
     
+    let serialNumber = BehaviorRelay<String>(value: "---")
+    let macAddr = BehaviorRelay<String>(value: "---")
+    let softVer = BehaviorRelay<String>(value: "---")
+
     var onInfoLoaded: ((SettingsInfo) -> ())?
     
     init(getSettingsInfoUseCase: GetSettingsInfoUseCase) {
@@ -23,7 +28,9 @@ class InfoViewModel {
     func setup() {
         
         getSettingsInfoUseCase.execute { [weak self] info in
-            self?.onInfoLoaded?(info)
+            self?.serialNumber.accept(info.serialNumber)
+            self?.macAddr.accept(info.mac)
+            self?.softVer.accept(info.softVersion)
         }
         
     }
