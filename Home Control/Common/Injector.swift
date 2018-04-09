@@ -25,7 +25,11 @@ class Injector {
     }
     
     func setUp() {
-        assembler.apply(assembly: MainAssembly())
+        assembler.apply(assemblies: [
+            MainAssembly(),
+            RoomsAssembly(),
+            DevicesAssembly(),
+        ])
     }
     
     func resolve<Service>(_ serviceType: Service.Type) -> Service {

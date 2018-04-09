@@ -52,6 +52,8 @@
 		3780F533207BDF4300AFA224 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F532207BDF4300AFA224 /* Injector.swift */; };
 		3780F535207BE0E800AFA224 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F534207BE0E800AFA224 /* MainAssembly.swift */; };
 		3780F537207BE4F800AFA224 /* AppViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F536207BE4F800AFA224 /* AppViewControllersFactory.swift */; };
+		3780F539207BECC800AFA224 /* RoomsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F538207BECC800AFA224 /* RoomsAssembly.swift */; };
+		3780F53B207BEF4600AFA224 /* DevicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */; };
 		FC34C3ECEB30CD786F04BBC6 /* Pods_Home_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020B1031EB39EB558FA1D3F7 /* Pods_Home_Control.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		3780F532207BDF4300AFA224 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		3780F534207BE0E800AFA224 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		3780F536207BE4F800AFA224 /* AppViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllersFactory.swift; sourceTree = "<group>"; };
+		3780F538207BECC800AFA224 /* RoomsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAssembly.swift; sourceTree = "<group>"; };
+		3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesAssembly.swift; sourceTree = "<group>"; };
 		EB696068E329169304A9E578 /* Pods-Home Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Home Control/Pods-Home Control.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -369,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				3780F506207A107A00AFA224 /* RoomsResource.swift */,
+				3780F538207BECC800AFA224 /* RoomsAssembly.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				3780F51C207A444A00AFA224 /* DeviceCellSource.swift */,
 				3780F528207A569300AFA224 /* ChangeDeviceStateResource.swift */,
 				3780F52C207ABCA400AFA224 /* ChangeDeviceValueResource.swift */,
+				3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -607,6 +613,7 @@
 				3780F519207A423900AFA224 /* DeviceViewModelFacotry.swift in Sources */,
 				3780F523207A477700AFA224 /* DimmableDeviceTableViewCell.swift in Sources */,
 				3780F52B207AB7A600AFA224 /* ChangeDimmableStateUseCase.swift in Sources */,
+				3780F539207BECC800AFA224 /* RoomsAssembly.swift in Sources */,
 				3780F537207BE4F800AFA224 /* AppViewControllersFactory.swift in Sources */,
 				3780F4DE2079649B00AFA224 /* Resource.swift in Sources */,
 				3780F51B207A42BE00AFA224 /* DeviceViewModel.swift in Sources */,
@@ -618,6 +625,7 @@
 				3780F4EC20797BA300AFA224 /* SectionsViewModel.swift in Sources */,
 				3780F4DC20756C6800AFA224 /* Result.swift in Sources */,
 				3780F52D207ABCA400AFA224 /* ChangeDeviceValueResource.swift in Sources */,
+				3780F53B207BEF4600AFA224 /* DevicesAssembly.swift in Sources */,
 				3780F4D6207566EA00AFA224 /* GetSettingsInfoUseCase.swift in Sources */,
 				3780F521207A455D00AFA224 /* DimmableLightDeviceViewModel.swift in Sources */,
 				3780F507207A107A00AFA224 /* RoomsResource.swift in Sources */,

@@ -13,9 +13,13 @@ class DeviceViewModelFacotry {
     func createDeviceViewModel(_ device: Device) -> DeviceViewModel {
         
         if device.type == .binary_light {
-            return BinaryLightDeviceViewModel(device, ChangeBinaryStateUseCase())
+            let vm = Injector.shared().resolve(BinaryLightDeviceViewModel.self)
+            vm.setup(device: device)
+            return vm
         } else {
-            return DimmableLightDeviceViewModel(device, ChangeDimmableStateUseCase())
+            let vm = Injector.shared().resolve(DimmableLightDeviceViewModel.self)
+            vm.setup(device: device)
+            return vm
         }
     
     }

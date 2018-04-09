@@ -20,8 +20,9 @@ class SectionsView: UITableView {
     let viewModel: SectionsViewModel
     weak var viewDelegate: SectionsViewDelgate?
     
-    init(viewModel: SectionsViewModel) {
+    init(viewModel: SectionsViewModel, sectionsViewDelegate: SectionsViewDelgate) {
         self.viewModel = viewModel
+        self.viewDelegate = sectionsViewDelegate
         super.init(frame: .zero, style: .plain)
 
         self.register(UITableViewCell.self, forCellReuseIdentifier: SectionsView.CellIdentifier)

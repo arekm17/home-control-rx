@@ -62,7 +62,7 @@ class DimmableDeviceTableViewCell: UITableViewCell {
     func bind(viewModel: DimmableLightDeviceViewModel) {
         self.viewModel = viewModel
         self.label.text = viewModel.label
-        slider.setValue(viewModel.value, animated: false)
+        slider.setValue(viewModel.value!, animated: false)
         viewModel.onValueChanged = { [weak self] in
             if let `self` = self, let value = self.viewModel?.value {
                 self.slider.setValue(value , animated: true)

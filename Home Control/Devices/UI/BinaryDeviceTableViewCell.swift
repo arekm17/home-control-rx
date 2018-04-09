@@ -51,7 +51,7 @@ class BinaryDeviceTableViewCell: UITableViewCell {
     func bind(viewModel: BinaryLightDeviceViewModel) {
         self.viewModel = viewModel
         label.text = viewModel.label
-        switchButton.setOn(viewModel.checked, animated: false)
+        switchButton.setOn(viewModel.checked!, animated: false)
         viewModel.switchStateChanged = { [weak self] in
             if let `self` = self, let checked = self.viewModel?.checked {
                 self.switchButton.setOn(checked , animated: true)

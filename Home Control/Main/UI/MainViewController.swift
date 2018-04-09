@@ -24,10 +24,9 @@ class MainViewController: UIViewController {
 
     let sectionsView: SectionsView
     
-    init(infoViewModel: InfoViewModel, sectionsViewModel: SectionsViewModel, sectionsViewDelegate: SectionsViewDelgate) {
-        self.infoView = InfoView(viewModel: infoViewModel)
-        self.sectionsView = SectionsView(viewModel: sectionsViewModel)
-        self.sectionsView.viewDelegate = sectionsViewDelegate
+    init(infoView: InfoView, sectionsView: SectionsView) {
+        self.infoView = infoView
+        self.sectionsView = sectionsView
         super.init(nibName: nil, bundle: nil)
     }
     

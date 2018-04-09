@@ -17,6 +17,8 @@ class MainAssembly: Assembly {
     
         container.autoregister(MainViewController.self, initializer: MainViewController.init)
         container.autoregister(InfoViewModel.self, initializer: InfoViewModel.init)
+        container.autoregister(InfoView.self, initializer: InfoView.init)
+        container.autoregister(SectionsView.self, initializer: SectionsView.init)
         container.autoregister(SectionsViewModel.self, initializer: SectionsViewModel.init)
         container.autoregister(GetSettingsInfoUseCase.self, initializer: GetSettingsInfoUseCase.init)
         container.autoregister(GetSectionsUseCase.self, initializer: GetSectionsUseCase.init)

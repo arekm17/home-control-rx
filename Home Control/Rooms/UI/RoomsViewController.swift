@@ -18,14 +18,15 @@ class RoomsViewController: UIViewController {
     private static let CellIdentifier = "Cell"
     
     let viewModel: RoomsViewModel
-    var delegate: RoomsViewControllerDelegate?
+    weak var delegate: RoomsViewControllerDelegate?
     
     var sectionId: Int?
     
     let tableView = UITableView()
     
-    init(viewModel: RoomsViewModel) {
+    init(viewModel: RoomsViewModel, delegate: RoomsViewControllerDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
     

@@ -14,20 +14,22 @@ class BinaryLightDeviceViewModel: DeviceViewModel {
     
     var switchStateChanged: (() -> ())?
     
-    let label: String
-    var checked: Bool
-    private let deviceId: Int
+    var label: String?
+    var checked: Bool?
+    private var deviceId: Int?
     
-    init(_ device: Device, _ changeBinaryStateUseCase: ChangeBinaryStateUseCase) {
+    init(_ changeBinaryStateUseCase: ChangeBinaryStateUseCase) {
+        self.changeBinaryStateUseCase = changeBinaryStateUseCase
+    }
+    
+    func setup(device: Device) {
         self.label = device.name
         self.checked = device.properties.value == "1"
-        self.changeBinaryStateUseCase = changeBinaryStateUseCase
         self.deviceId = device.id
     }
     
-    
     func changeValue(_ on: Bool) {
-        changeBinaryStateUseCase.execute(deviceId: deviceId, value: on) { [weak self] success in
+        changeBinaryStateUseCase.execute(deviceId: deviceId!, value: on) { [weak self] success in
             if (success) {
                 self?.checked = on
             }
