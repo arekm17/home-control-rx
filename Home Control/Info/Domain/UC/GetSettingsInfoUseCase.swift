@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct GetSettingsInfoUseCase {
+protocol GetSettingsInfoUseCase {
+    func execute(_ completion: @escaping ((SettingsInfo) -> ()))
+}
+
+struct GetSettingsInfoUseCaseImpl: GetSettingsInfoUseCase {
     
     func execute(_ completion: @escaping ((SettingsInfo) -> ())) {
         

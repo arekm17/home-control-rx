@@ -20,7 +20,7 @@ class MainAssembly: Assembly {
         container.autoregister(InfoView.self, initializer: InfoView.init)
         container.autoregister(SectionsView.self, initializer: SectionsView.init)
         container.autoregister(SectionsViewModel.self, initializer: SectionsViewModel.init)
-        container.autoregister(GetSettingsInfoUseCase.self, initializer: GetSettingsInfoUseCase.init)
+        container.autoregister(GetSettingsInfoUseCase.self, initializer: GetSettingsInfoUseCaseImpl.init)
         container.autoregister(GetSectionsUseCase.self, initializer: GetSectionsUseCase.init)
 
         container.autoregister(AppFlowController.self, initializer: AppFlowController.init).inObjectScope(.container)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A56244EC3A6BF75D528459 /* Pods_HomeControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9F58F37BDC5D0E52B38A0F /* Pods_HomeControl.framework */; };
 		3780F4B0207505FD00AFA224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F4AF207505FD00AFA224 /* AppDelegate.swift */; };
 		3780F4B7207505FD00AFA224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3780F4B6207505FD00AFA224 /* Assets.xcassets */; };
 		3780F4BA207505FD00AFA224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3780F4B8207505FD00AFA224 /* LaunchScreen.storyboard */; };
@@ -54,13 +55,28 @@
 		3780F537207BE4F800AFA224 /* AppViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F536207BE4F800AFA224 /* AppViewControllersFactory.swift */; };
 		3780F539207BECC800AFA224 /* RoomsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F538207BECC800AFA224 /* RoomsAssembly.swift */; };
 		3780F53B207BEF4600AFA224 /* DevicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */; };
+		3780F543207C039400AFA224 /* Home_ControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F542207C039400AFA224 /* Home_ControlTests.swift */; };
+		3780F54D207C10C500AFA224 /* InfoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */; };
+		E614E769B005D20FBAC6A3B6 /* Pods_HomeControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5D40AD62A28F0B0050C221 /* Pods_HomeControlTests.framework */; };
 		FC34C3ECEB30CD786F04BBC6 /* Pods_Home_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020B1031EB39EB558FA1D3F7 /* Pods_Home_Control.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3780F545207C039400AFA224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3780F4A4207505FD00AFA224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3780F4AB207505FD00AFA224;
+			remoteInfo = "Home Control";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01B4288ED4C1597402BA6195 /* Pods-HomeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeControl/Pods-HomeControl.debug.xcconfig"; sourceTree = "<group>"; };
 		020B1031EB39EB558FA1D3F7 /* Pods_Home_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9F90037D2416F83A27868 /* Pods-Home Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Home Control/Pods-Home Control.debug.xcconfig"; sourceTree = "<group>"; };
-		3780F4AC207505FD00AFA224 /* Home Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D278FB99BB6F35FC513FEE0 /* Pods-HomeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeControl/Pods-HomeControl.release.xcconfig"; sourceTree = "<group>"; };
+		3780F4AC207505FD00AFA224 /* HomeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3780F4AF207505FD00AFA224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3780F4B6207505FD00AFA224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3780F4B9207505FD00AFA224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +127,14 @@
 		3780F536207BE4F800AFA224 /* AppViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllersFactory.swift; sourceTree = "<group>"; };
 		3780F538207BECC800AFA224 /* RoomsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAssembly.swift; sourceTree = "<group>"; };
 		3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesAssembly.swift; sourceTree = "<group>"; };
+		3780F540207C039400AFA224 /* HomeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3780F542207C039400AFA224 /* Home_ControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ControlTests.swift; sourceTree = "<group>"; };
+		3780F544207C039400AFA224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModelTest.swift; sourceTree = "<group>"; };
+		3A9F58F37BDC5D0E52B38A0F /* Pods_HomeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5D40AD62A28F0B0050C221 /* Pods_HomeControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C34CA4E25BF12C99535607B /* Pods-HomeControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCADBD79BDA106665618DBF6 /* Pods-HomeControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB696068E329169304A9E578 /* Pods-Home Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Home Control/Pods-Home Control.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +144,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC34C3ECEB30CD786F04BBC6 /* Pods_Home_Control.framework in Frameworks */,
+				27A56244EC3A6BF75D528459 /* Pods_HomeControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3780F53D207C039400AFA224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E614E769B005D20FBAC6A3B6 /* Pods_HomeControlTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +164,10 @@
 			children = (
 				13B9F90037D2416F83A27868 /* Pods-Home Control.debug.xcconfig */,
 				EB696068E329169304A9E578 /* Pods-Home Control.release.xcconfig */,
+				01B4288ED4C1597402BA6195 /* Pods-HomeControl.debug.xcconfig */,
+				1D278FB99BB6F35FC513FEE0 /* Pods-HomeControl.release.xcconfig */,
+				9C34CA4E25BF12C99535607B /* Pods-HomeControlTests.debug.xcconfig */,
+				BCADBD79BDA106665618DBF6 /* Pods-HomeControlTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3780F4AE207505FD00AFA224 /* Home Control */,
+				3780F541207C039400AFA224 /* Home ControlTests */,
 				3780F4AD207505FD00AFA224 /* Products */,
 				2AAFC924701E2E5DDBA689F9 /* Pods */,
 				F366191449A826FA05017CFC /* Frameworks */,
@@ -148,7 +186,8 @@
 		3780F4AD207505FD00AFA224 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3780F4AC207505FD00AFA224 /* Home Control.app */,
+				3780F4AC207505FD00AFA224 /* HomeControl.app */,
+				3780F540207C039400AFA224 /* HomeControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,10 +481,38 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
+		3780F541207C039400AFA224 /* Home ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				3780F54A207C09E200AFA224 /* Info */,
+				3780F542207C039400AFA224 /* Home_ControlTests.swift */,
+				3780F544207C039400AFA224 /* Info.plist */,
+			);
+			path = "Home ControlTests";
+			sourceTree = "<group>";
+		};
+		3780F54A207C09E200AFA224 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				3780F54B207C09F000AFA224 /* Presentation */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		3780F54B207C09F000AFA224 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		F366191449A826FA05017CFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				020B1031EB39EB558FA1D3F7 /* Pods_Home_Control.framework */,
+				3A9F58F37BDC5D0E52B38A0F /* Pods_HomeControl.framework */,
+				6E5D40AD62A28F0B0050C221 /* Pods_HomeControlTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -453,9 +520,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3780F4AB207505FD00AFA224 /* Home Control */ = {
+		3780F4AB207505FD00AFA224 /* HomeControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3780F4BE207505FD00AFA224 /* Build configuration list for PBXNativeTarget "Home Control" */;
+			buildConfigurationList = 3780F4BE207505FD00AFA224 /* Build configuration list for PBXNativeTarget "HomeControl" */;
 			buildPhases = (
 				E101B0091DD08CCCCFBD36A3 /* [CP] Check Pods Manifest.lock */,
 				3780F4A8207505FD00AFA224 /* Sources */,
@@ -468,10 +535,31 @@
 			);
 			dependencies = (
 			);
-			name = "Home Control";
+			name = HomeControl;
 			productName = "Home Control";
-			productReference = 3780F4AC207505FD00AFA224 /* Home Control.app */;
+			productReference = 3780F4AC207505FD00AFA224 /* HomeControl.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3780F53F207C039400AFA224 /* HomeControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3780F547207C039400AFA224 /* Build configuration list for PBXNativeTarget "HomeControlTests" */;
+			buildPhases = (
+				6FF8AF8B3C3F79736D915C88 /* [CP] Check Pods Manifest.lock */,
+				3780F53C207C039400AFA224 /* Sources */,
+				3780F53D207C039400AFA224 /* Frameworks */,
+				3780F53E207C039400AFA224 /* Resources */,
+				B7DE1DB7480CFA300084D29C /* [CP] Embed Pods Frameworks */,
+				19E7DF67772C6FD7F161CB33 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3780F546207C039400AFA224 /* PBXTargetDependency */,
+			);
+			name = HomeControlTests;
+			productName = "Home ControlTests";
+			productReference = 3780F540207C039400AFA224 /* HomeControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -488,6 +576,11 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
+					3780F53F207C039400AFA224 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3780F4AB207505FD00AFA224;
+					};
 				};
 			};
 			buildConfigurationList = 3780F4A7207505FD00AFA224 /* Build configuration list for PBXProject "Home Control" */;
@@ -503,7 +596,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3780F4AB207505FD00AFA224 /* Home Control */,
+				3780F4AB207505FD00AFA224 /* HomeControl */,
+				3780F53F207C039400AFA224 /* HomeControlTests */,
 			);
 		};
 /* End PBXProject section */
@@ -518,16 +612,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3780F53E207C039400AFA224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19E7DF67772C6FD7F161CB33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		631D5D98EADFF9195758E740 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Home Control/Pods-Home Control-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeControl/Pods-HomeControl-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -544,7 +660,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Home Control/Pods-Home Control-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeControl/Pods-HomeControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF8AF8B3C3F79736D915C88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeControlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7DE1DB7480CFA300084D29C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyMocky/SwiftyMocky.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMocky.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5112CFDA7683AC5205AF14A /* [CP] Copy Pods Resources */ = {
@@ -559,7 +715,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Home Control/Pods-Home Control-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeControl/Pods-HomeControl-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E101B0091DD08CCCCFBD36A3 /* [CP] Check Pods Manifest.lock */ = {
@@ -573,7 +729,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Home Control-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HomeControl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -635,7 +791,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3780F53C207C039400AFA224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780F54D207C10C500AFA224 /* InfoViewModelTest.swift in Sources */,
+				3780F543207C039400AFA224 /* Home_ControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3780F546207C039400AFA224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3780F4AB207505FD00AFA224 /* HomeControl */;
+			targetProxy = 3780F545207C039400AFA224 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3780F4B8207505FD00AFA224 /* LaunchScreen.storyboard */ = {
@@ -758,7 +931,7 @@
 		};
 		3780F4BF207505FD00AFA224 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13B9F90037D2416F83A27868 /* Pods-Home Control.debug.xcconfig */;
+			baseConfigurationReference = 01B4288ED4C1597402BA6195 /* Pods-HomeControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -778,7 +951,7 @@
 		};
 		3780F4C0207505FD00AFA224 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB696068E329169304A9E578 /* Pods-Home Control.release.xcconfig */;
+			baseConfigurationReference = 1D278FB99BB6F35FC513FEE0 /* Pods-HomeControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -795,6 +968,40 @@
 			};
 			name = Release;
 		};
+		3780F548207C039400AFA224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C34CA4E25BF12C99535607B /* Pods-HomeControlTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83239C6MR8;
+				INFOPLIST_FILE = "Home ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.arekm.Home-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeControl.app/HomeControl";
+			};
+			name = Debug;
+		};
+		3780F549207C039400AFA224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCADBD79BDA106665618DBF6 /* Pods-HomeControlTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83239C6MR8;
+				INFOPLIST_FILE = "Home ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.arekm.Home-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeControl.app/HomeControl";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -807,11 +1014,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3780F4BE207505FD00AFA224 /* Build configuration list for PBXNativeTarget "Home Control" */ = {
+		3780F4BE207505FD00AFA224 /* Build configuration list for PBXNativeTarget "HomeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3780F4BF207505FD00AFA224 /* Debug */,
 				3780F4C0207505FD00AFA224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3780F547207C039400AFA224 /* Build configuration list for PBXNativeTarget "HomeControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3780F548207C039400AFA224 /* Debug */,
+				3780F549207C039400AFA224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

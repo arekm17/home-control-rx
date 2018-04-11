@@ -1,28 +1,40 @@
 PODS:
+  - RxBlocking (4.1.2):
+    - RxSwift (~> 4.0)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxGesture (1.2.1):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
+  - Sourcery (0.10.1)
+  - SwiftyMocky (2.0.1):
+    - SwiftyMocky/Core (= 2.0.1)
+  - SwiftyMocky/Core (2.0.1):
+    - Sourcery
   - Swinject (2.2.0)
   - SwinjectAutoregistration (2.1.1):
     - Swinject (~> 2.1)
 
 DEPENDENCIES:
+  - RxBlocking
   - RxCocoa (~> 4.0)
   - RxGesture
   - RxSwift (~> 4.0)
+  - SwiftyMocky
   - Swinject (= 2.2.0)
   - SwinjectAutoregistration (= 2.1.1)
 
 SPEC CHECKSUMS:
+  RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  Sourcery: ac71ac4d490f62fd381a9f3b558f3093d91bddd5
+  SwiftyMocky: 10aae968ee3f780ad264ba6c001c92e42f5b752e
   Swinject: 4ca48bca7de5f398229a26abe1ac902b9f3ee541
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 
-PODFILE CHECKSUM: bed73f552e6ee7f7746d80a9f2b3f73252a2de0a
+PODFILE CHECKSUM: 5080479058f9edf6b84a6a5b80c36fc71b044341
 
 COCOAPODS: 1.4.0
