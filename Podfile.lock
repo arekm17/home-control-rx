@@ -7,10 +7,10 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
-  - Sourcery (0.10.1)
-  - SwiftyMocky (2.0.1):
-    - SwiftyMocky/Core (= 2.0.1)
-  - SwiftyMocky/Core (2.0.1):
+  - Sourcery (0.11.2)
+  - SwiftyMocky (2.0.2):
+    - SwiftyMocky/Core (= 2.0.2)
+  - SwiftyMocky/Core (2.0.2):
     - Sourcery
   - Swinject (2.2.0)
   - SwinjectAutoregistration (2.1.1):
@@ -30,8 +30,8 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  Sourcery: ac71ac4d490f62fd381a9f3b558f3093d91bddd5
-  SwiftyMocky: 10aae968ee3f780ad264ba6c001c92e42f5b752e
+  Sourcery: b4f5520e758f1a6603ff29391662bbf9be86489b
+  SwiftyMocky: 152d9b40a2db7d969f2e124d57ceffbc6c7e4945
   Swinject: 4ca48bca7de5f398229a26abe1ac902b9f3ee541
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 

@@ -55,8 +55,9 @@
 		3780F537207BE4F800AFA224 /* AppViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F536207BE4F800AFA224 /* AppViewControllersFactory.swift */; };
 		3780F539207BECC800AFA224 /* RoomsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F538207BECC800AFA224 /* RoomsAssembly.swift */; };
 		3780F53B207BEF4600AFA224 /* DevicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */; };
-		3780F543207C039400AFA224 /* Home_ControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F542207C039400AFA224 /* Home_ControlTests.swift */; };
 		3780F54D207C10C500AFA224 /* InfoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */; };
+		3780F552207E212F00AFA224 /* GetSettingsInfoUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F550207E208A00AFA224 /* GetSettingsInfoUseCaseTest.swift */; };
+		3780F555207E8FE300AFA224 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3780F553207E8FDD00AFA224 /* Mock.generated.swift */; };
 		E614E769B005D20FBAC6A3B6 /* Pods_HomeControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5D40AD62A28F0B0050C221 /* Pods_HomeControlTests.framework */; };
 		FC34C3ECEB30CD786F04BBC6 /* Pods_Home_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020B1031EB39EB558FA1D3F7 /* Pods_Home_Control.framework */; };
 /* End PBXBuildFile section */
@@ -128,9 +129,10 @@
 		3780F538207BECC800AFA224 /* RoomsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAssembly.swift; sourceTree = "<group>"; };
 		3780F53A207BEF4600AFA224 /* DevicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesAssembly.swift; sourceTree = "<group>"; };
 		3780F540207C039400AFA224 /* HomeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3780F542207C039400AFA224 /* Home_ControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ControlTests.swift; sourceTree = "<group>"; };
 		3780F544207C039400AFA224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModelTest.swift; sourceTree = "<group>"; };
+		3780F550207E208A00AFA224 /* GetSettingsInfoUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSettingsInfoUseCaseTest.swift; sourceTree = "<group>"; };
+		3780F553207E8FDD00AFA224 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		3A9F58F37BDC5D0E52B38A0F /* Pods_HomeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5D40AD62A28F0B0050C221 /* Pods_HomeControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C34CA4E25BF12C99535607B /* Pods-HomeControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeControlTests/Pods-HomeControlTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,8 +177,8 @@
 		3780F4A3207505FD00AFA224 = {
 			isa = PBXGroup;
 			children = (
-				3780F4AE207505FD00AFA224 /* Home Control */,
-				3780F541207C039400AFA224 /* Home ControlTests */,
+				3780F4AE207505FD00AFA224 /* HomeControl */,
+				3780F541207C039400AFA224 /* HomeControlTests */,
 				3780F4AD207505FD00AFA224 /* Products */,
 				2AAFC924701E2E5DDBA689F9 /* Pods */,
 				F366191449A826FA05017CFC /* Frameworks */,
@@ -192,7 +194,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3780F4AE207505FD00AFA224 /* Home Control */ = {
+		3780F4AE207505FD00AFA224 /* HomeControl */ = {
 			isa = PBXGroup;
 			children = (
 				3780F4C720750D1A00AFA224 /* Extensions */,
@@ -208,7 +210,7 @@
 				3780F4B8207505FD00AFA224 /* LaunchScreen.storyboard */,
 				3780F4BB207505FD00AFA224 /* Info.plist */,
 			);
-			path = "Home Control";
+			path = HomeControl;
 			sourceTree = "<group>";
 		};
 		3780F4C12075063300AFA224 /* Main */ = {
@@ -481,19 +483,20 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		3780F541207C039400AFA224 /* Home ControlTests */ = {
+		3780F541207C039400AFA224 /* HomeControlTests */ = {
 			isa = PBXGroup;
 			children = (
+				3780F553207E8FDD00AFA224 /* Mock.generated.swift */,
 				3780F54A207C09E200AFA224 /* Info */,
-				3780F542207C039400AFA224 /* Home_ControlTests.swift */,
 				3780F544207C039400AFA224 /* Info.plist */,
 			);
-			path = "Home ControlTests";
+			path = HomeControlTests;
 			sourceTree = "<group>";
 		};
 		3780F54A207C09E200AFA224 /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				3780F54E207E206300AFA224 /* Domain */,
 				3780F54B207C09F000AFA224 /* Presentation */,
 			);
 			path = Info;
@@ -505,6 +508,22 @@
 				3780F54C207C10C500AFA224 /* InfoViewModelTest.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3780F54E207E206300AFA224 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3780F54F207E206A00AFA224 /* UC */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3780F54F207E206A00AFA224 /* UC */ = {
+			isa = PBXGroup;
+			children = (
+				3780F550207E208A00AFA224 /* GetSettingsInfoUseCaseTest.swift */,
+			);
+			path = UC;
 			sourceTree = "<group>";
 		};
 		F366191449A826FA05017CFC /* Frameworks */ = {
@@ -795,8 +814,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3780F555207E8FE300AFA224 /* Mock.generated.swift in Sources */,
+				3780F552207E212F00AFA224 /* GetSettingsInfoUseCaseTest.swift in Sources */,
 				3780F54D207C10C500AFA224 /* InfoViewModelTest.swift in Sources */,
-				3780F543207C039400AFA224 /* Home_ControlTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,7 +962,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.arekm.Home-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Home Control/Common/API/Home Control-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeControl/Common/API/Home Control-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -962,7 +982,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.arekm.Home-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Home Control/Common/API/Home Control-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeControl/Common/API/Home Control-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
