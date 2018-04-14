@@ -1,0 +1,19 @@
+sources:
+  include:
+    - ./HomeControl
+    - ./HomeControlTests
+templates:
+  - ./Pods/SwiftyMocky/Sources/Templates
+output:
+  ./HomeControlTests
+args:
+  testable:
+    - HomeControl
+  import:
+    - RxSwift
+    - RxBlocking
+  excludedSwiftLintRules:
+    - force_cast
+    - function_body_length
+    - line_length
+    - vertical_whitespace
